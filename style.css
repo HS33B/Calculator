@@ -1,0 +1,111 @@
+html, body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+}
+#outer {
+    justify-self: center;
+    background-color: black;
+    height: 500px;
+    width: 400px;
+    border-radius: 16px;
+    padding-top: 16px;
+}
+#display{
+    justify-self:center;
+    align-content: center;
+    text-align: right;
+    background-color: lightgrey;
+    height: 100px;
+    width: 355px;
+    border-radius: 10px;
+    font-size: xx-large;
+    padding-right: 10px;
+}
+#button_holder{
+    justify-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 12px;
+    height: 375px;
+    width: 375px;
+}
+.buttons, .button0, .buttonAC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(252, 189, 71);
+    height: 65px;
+    width:87px;
+    border-radius: 10px;
+    font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.button0{
+    width: 175px;
+}
+.buttonAC{
+    background-color: crimson;
+}
+.buttons:hover{
+    background-color: rgb(210, 138, 3);
+}
+.button0:hover{
+    background-color: rgb(210, 138, 3);
+}
+.buttonAC:hover{
+    background-color: lightcoral;
+}
+#butDot{
+    background-color: lightblue;
+}
+#butDot:hover{
+    background-color: rgb(171, 235, 247);
+}
+#butDivide {
+    background-color: rgb(173, 171, 171);
+}
+#butDivide:hover {
+    background-color: lightgrey;
+}
+#butMultiply {
+    background-color: rgb(173, 171, 171);
+}
+#butMultiply:hover {
+    background-color: lightgrey;
+}
+#butPlus {
+    background-color: rgb(173, 171, 171);
+}
+#butPlus:hover {
+    background-color: lightgrey;
+}
+#butMinus {
+    background-color: rgb(173, 171, 171);
+}
+#butMinus:hover {
+    background-color: lightgrey;
+}
+#butSquare {
+    background-color: rgb(173, 171, 171);
+}
+#butSquare:hover {
+    background-color: lightgrey;
+}
+#butDiv {
+    background-color: rgb(173, 171, 171);
+}
+#butDiv:hover {
+    background-color: lightgrey;
+}
+#butEqual {
+    background-color: crimson;
+}
+#butEqual:hover {
+    background-color: lightcoral;
+}
