@@ -18,6 +18,8 @@ const butEqual = document.querySelector('#butEqual');
 const butAC = document.querySelector('#butAC');
 const butSquare = document.querySelector('#butSquare');
 
+const maxButCount = 15;
+let butCount = 0;
 let val11 = '';
 let val22 = '';
 let val33 = '';
@@ -55,6 +57,13 @@ but1.addEventListener('click', ()=> {
     if (val33 == '') {
         displayText();
     }
+    if (butCount < maxButCount) {
+        butCounts();
+    }
+    else {
+        location.reload();
+    }
+    
 })
 but2.addEventListener('click', ()=> {
     num = '2';
@@ -82,6 +91,12 @@ but2.addEventListener('click', ()=> {
     val11 = val1;
     if (val33 == '') {
         displayText();
+    }
+    if (butCount < maxButCount) {
+        butCounts();
+    }
+    else {
+        location.reload();
     }
 })
 but3.addEventListener('click', ()=> {
@@ -111,6 +126,12 @@ but3.addEventListener('click', ()=> {
     if (val33 == '') {
         displayText();
     }
+    if (butCount < maxButCount) {
+        butCounts();
+    }
+    else {
+        location.reload();
+    }
 })
 but4.addEventListener('click', ()=> {
     num = '4';
@@ -138,6 +159,12 @@ but4.addEventListener('click', ()=> {
     val11 = val1;
     if (val33 == '') {
         displayText();
+    }
+    if (butCount < maxButCount) {
+        butCounts();
+    }
+    else {
+        location.reload();
     }
 })
 but5.addEventListener('click', ()=> {
@@ -167,6 +194,12 @@ but5.addEventListener('click', ()=> {
     if (val33 == '') {
         displayText();
     }
+    if (butCount < maxButCount) {
+        butCounts();
+    }
+    else {
+        location.reload();
+    }
 })
 but6.addEventListener('click', ()=> {
     num = '6';
@@ -194,6 +227,12 @@ but6.addEventListener('click', ()=> {
     val11 = val1;
     if (val33 == '') {
         displayText();
+    }
+    if (butCount < maxButCount) {
+        butCounts();
+    }
+    else {
+        location.reload();
     }
 })
 but7.addEventListener('click', ()=> {
@@ -223,6 +262,12 @@ but7.addEventListener('click', ()=> {
     if (val33 == '') {
         displayText();
     }
+    if (butCount < maxButCount) {
+        butCounts();
+    }
+    else {
+        location.reload();
+    }
 })
 but8.addEventListener('click', ()=> {
     num = '8';
@@ -250,6 +295,12 @@ but8.addEventListener('click', ()=> {
     val11 = val1;
     if (val33 == '') {
         displayText();
+    }
+    if (butCount < maxButCount) {
+        butCounts();
+    }
+    else {
+        location.reload();
     }
 })
 but9.addEventListener('click', ()=> {
@@ -279,6 +330,12 @@ but9.addEventListener('click', ()=> {
     if (val33 == '') {
         displayText();
     }
+    if (butCount < maxButCount) {
+        butCounts();
+    }
+    else {
+        location.reload();
+    }
 })
 but0.addEventListener('click', ()=> {
     num = '0';
@@ -306,6 +363,12 @@ but0.addEventListener('click', ()=> {
     val11 = val1;
     if (val33 == '') {
         displayText();
+    }
+    if (butCount < maxButCount) {
+        butCounts();
+    }
+    else {
+        location.reload();
     }
 })
 butDot.addEventListener('click', () => {
@@ -351,6 +414,12 @@ butDot.addEventListener('click', () => {
     }
     if (val33 == '') {
         displayText();
+    }
+    if (butCount < maxButCount) {
+        butCounts();
+    }
+    else {
+        location.reload();
     }
 })
 butPlus.addEventListener('click', () => {
@@ -474,6 +543,7 @@ butEqual.addEventListener('click', () => {
     if (val1Arr.length>0 && val2Arr.length>0 && operator != undefined) {
         operate();
     }
+    butCount = 0;
 })
 butAC.addEventListener('click', () => {
     location.reload();
@@ -487,4 +557,7 @@ function contiOperate() {
     val33 = val3;
     display.textContent = '';
     display.textContent = result + ' ' + operator + ' ' + val33;
+}
+function butCounts() {
+    butCount += 1;
 }
