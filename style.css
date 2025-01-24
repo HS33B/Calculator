@@ -9,9 +9,10 @@ html, body{
     justify-self: center;
     background-color: black;
     height: 500px;
-    width: 400px;
+    width: 395px;
     border-radius: 16px;
-    padding-top: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 #display{
     justify-self:center;
@@ -19,10 +20,11 @@ html, body{
     text-align: right;
     background-color: lightgrey;
     height: 100px;
-    width: 355px;
+    width: 358px;
     border-radius: 10px;
     font-size: xx-large;
     padding-right: 10px;
+    margin: 12px;
 }
 #button_holder{
     justify-self: center;
@@ -30,8 +32,8 @@ html, body{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    border-radius: 10px;
-    margin-top: 12px;
+    border: 0;
+    margin: 10px;
     height: 375px;
     width: 375px;
 }
